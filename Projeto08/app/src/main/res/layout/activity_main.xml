@@ -46,6 +46,7 @@
             app:boxBackgroundMode="filled">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_precoAlcool"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -62,6 +63,7 @@
             app:boxBackgroundMode="filled">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_precoGasolina"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -71,17 +73,18 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/btn_calcular"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:backgroundTint="#2A3895"
+            android:onClick="calcularPreco"
             android:text="Calcular"
             android:textSize="20sp"
             app:cornerRadius="3dp" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/text_resultado"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
